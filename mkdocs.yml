@@ -10,4 +10,12 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  
+  # Add this to the bottom of mkdocs.yml
+markdown_extensions:
+  - attr_list # Allows you to create buttons
+  - md_in_html # Allows HTML centering
+  - admonition # Allows colored info/warning boxes
+  - pymdownx.details # Makes the boxes collapsible
+  - pymdownx.emoji: # Enables professional icons
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
