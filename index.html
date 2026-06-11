@@ -190,6 +190,31 @@
             </div>
         </div>
     </div>
+    <!-- Put this after your </grid> container -->
+<div class="container" style="margin-top: 60px;">
+    
+    <!-- Detailed Section for Task 1 -->
+    <section id="task-1-details" style="background-color: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; margin-bottom: 40px;">
+        <h2 style="color: #fff; border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 0;">Task 1: Infrastructure Setup</h2>
+        
+        <h3>1. OS Installation</h3>
+        <p>We chose Ubuntu Server 24.04 LTS for our Raspberry Pi 5 node. We flashed it using the official Raspberry Pi Imager tool.</p>
+        
+        <h3>2. Object Detection Software</h3>
+        <p>To set up object detection, we installed YOLOv8 using Python. Here are the commands we ran on the Pi 5:</p>
+        <pre style="background-color: #0b0f19; padding: 15px; border-radius: 8px; color: #a5b4fc; overflow-x: auto; border: 1px solid var(--border);">
+sudo apt update && sudo apt upgrade -y
+pip3 install ultralytics</pre>
+
+        <h3>3. Camera Verification</h3>
+        <p>To verify the Raspberry Pi AI Camera is working, we ran:</p>
+        <pre style="background-color: #0b0f19; padding: 15px; border-radius: 8px; color: #a5b4fc; overflow-x: auto; border: 1px solid var(--border);">
+rpicam-still -o test.jpg</pre>
+    </section>
+
+    <!-- You can add <section id="task-2-details"> here later as you progress -->
+    
+</div>
 
     <footer>
         <p>&copy; 2026 Team 1 | FRA-UAS Faculty of Computer Science and Engineering</p>
