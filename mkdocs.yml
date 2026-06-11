@@ -1,0 +1,13 @@
+site_name: Team 1 - Project Documentation
+site_description: Official documentation for Cloud Computing Semester Project
+theme:
+  name: material
+  palette:
+    scheme: slate # Gives you that cool dark mode
+    primary: indigo
+  features:
+    - navigation.tabs
+    - content.code.copy
+nav:
+  - Home: index.md
+  
